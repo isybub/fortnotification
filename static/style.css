@@ -1,0 +1,254 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: "Open Sans", sans-serif;
+}
+
+h1{
+	font-family: "Roboto", sans-serif;
+	font-size:72px;
+	text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
+	margin:0;
+	margin-bottom: 50px; 
+}
+
+
+.googleLogin{
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left:10px;
+	padding-right:10px;
+	font-family: "Open Sans", sans-serif;
+	background-color: #f6f6f6;
+	border-radius: 5px 5px;
+	text-decoration: none;
+	color:#333;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2), inset 0px 0px 10px rgba(0,0,0,0.1);
+	font-size: 32px;
+	transition: box-shadow 0.2s;
+}
+.googleLogin:hover{
+	box-shadow: 2px 2px 15px rgba(0,0,0,0.3), inset 0px 0px 40px rgba(0,0,0,0.3);
+}
+
+img{
+	display:inline;
+	width:35px;
+	height:35px;
+	margin-bottom:-7px;
+	margin-left:15px;
+}
+.content{
+	position: fixed;
+	width:33%;
+	height:100%;
+	left:33%;
+	right:33%;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(200,200,200,1);
+	box-shadow: 0px 0px 100px 100px rgba(200,200,200,1);
+}
+textarea{
+	background-color: rgba(200,200,200,1);
+	border: none;
+	outline: none;
+	box-shadow: inset 0px 0px 50px rgba(0,0,0,0.5);
+	transition:all 0.3s;
+}
+textarea:focus{
+	box-shadow: inset 0px 0px 75px rgba(0,0,0,0.5), 0px 0px 50px rgba(200,200,200,0.5);
+	background-color: rgb(255,255,255);
+
+}
+
+#charts{
+
+	position:absolute;
+	top:400px;
+
+}
+.content2{
+	position: absolute;
+	width:50%;
+	height:250px;
+	padding-top:25px;
+	margin-left:25%;
+	margin-top:136px;
+	margin-right:auto;
+	justify-content: center;
+	text-align: center;
+	color:rgb(255,255,255);
+	text-shadow: 0px 0px 5px rgba(0,0,0,1);
+	background-image:url('back2.png');
+	background-size:cover;
+	opacity: 0;
+	background-position: 25%;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+.content3{
+	position: fixed;
+	width:100%;
+	height:33%;
+	left:0;
+	opacity: 0;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(200,200,200,0.75);
+}
+.finalize{
+	background-image:url('back.jpg');
+	position: fixed;
+	height: 100%;
+	width:100%;
+}
+.lilBox{
+	opacity: 0;
+	position: fixed;
+	height:220px;
+	width:240px;
+	background-color: rgba(210,210,210,1);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+	margin: 50px;
+	padding-left:30px;
+	padding-right:30px;
+
+}
+
+.def{
+	position: fixed;
+	width:100%;
+	height:4%;
+	left:0;
+	bottom:33%;
+	justify-content: center;
+	text-align: center;
+	background-color: rgb(246,240,232);
+
+}
+#map{
+	height:100%;
+}
+#mapholder{
+	position: fixed;
+	width:100%;
+	height:33%;
+	left:0;
+	bottom: 0;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(200,200,200,1);
+}
+.back{
+	background-image: url('./back.jpg');
+	width:100%;
+	height:100%;
+	position: fixed;
+	top:0;
+	background-size: 100%;
+	background-position-y: 50%; 
+}
+.fileRow{
+	display:block;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.fileRow >div{
+	display:inline-block;
+}
+.files{
+	width:80%;
+	padding:10%;
+    overflow-y: scroll;
+    height: 77%;
+}
+
+.newFile{
+	background-color: rgba(200,200,200,0.7);
+	bottom:0;
+	position: absolute;
+	width: 50%;
+	height:13%;
+	left:25%;
+	right:25%;
+	justify-content: center;
+	text-align: center;
+	text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
+}
+.sheath{
+	bottom: 0;
+	position: absolute;
+	width: 50%;
+	height:13%;
+	left:25%;
+	right:25%;
+	opacity: 100%;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(200,200,200,1);
+	box-shadow: 0px 0px 20px  rgba(0,25,50,0.5);
+	transition: background-color 1s,box-shadow 1s;
+}
+.sheath:hover{
+	background-color: rgba(100,150,150,1);
+	box-shadow: 0px 0px 20px rgba(0,50,100,0.8);
+}
+.add{
+	font-size: 80px;
+	margin: 0;
+}
+.cancel{
+	position: absolute;
+	left:23%;
+	font-size:40px;
+	margin:0;
+	top:-1px;
+}
+
+.mainCont{
+	width: 100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	border:none;
+
+}
+
+.fakeShadow{
+	position: absolute;
+	left:25%;
+	z-index: -1;
+	width: 50%;
+	height: 86px;
+	box-shadow:0px -5px 20px rgba(0,0,0,0.5);
+
+}
+header{
+	opacity: 0;
+	width:100%;
+	position: absolute;
+	z-index: -3;
+	background-color: rgba(200,200,200,0.7);
+	box-shadow: inset 0px -20px 20px -20px rgba(40,40,40,0.6);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
