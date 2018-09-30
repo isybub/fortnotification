@@ -1,0 +1,9 @@
+
+cron:
+- description: "daily summary job"
+  url: /cronjob.php
+  schedule: every day 10:05
+
+- description: "daily summary job"
+  url: /cronjob.php
+  schedule: every day 18:05

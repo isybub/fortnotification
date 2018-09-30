@@ -1,0 +1,51 @@
+runtime: php55
+api_version: 1
+
+handlers: 
+
+- url: /static
+  static_dir: static
+
+
+- url: /fortnite-api
+  static_dir: fortnite-api
+
+- url: /index2
+  script: index2.php
+
+- url: /submit.php
+  script: submit.php
+
+- url: /Auth.php
+  script: Auth.php
+
+- url: /Client.php
+  script: Client.php
+
+- url: /NewFile.php
+  script: NewFile.php
+
+
+
+- url: /updateFile.php
+  script: updateFile.php
+
+- url: /cronjob.php
+  script: cronjob.php
+
+- url: /backup.php
+  script: backup.php
+
+
+- url: /(.+\.php)$
+  script: \1
+  
+- url: /*
+  script: index.php
+
+env_variables:
+  # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
+  # values obtained when configuring your Cloud SQL instance.
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/fortnotification:australia-southeast1:myinstance2;dbname=general
+  MYSQL_USER: root
+  MYSQL_PASSWORD: myinstance2
