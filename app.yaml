@@ -49,3 +49,12 @@ env_variables:
   MYSQL_DSN: mysql:unix_socket=/cloudsql/fortnotification:australia-southeast1:myinstance2;dbname=general
   MYSQL_USER: root
   MYSQL_PASSWORD: myinstance2
+
+
+skip_files:
+  - ^(.*/)?#.*#$
+  - ^(.*/)?.*~$
+  - ^(.*/)?.*\.py[co]$
+  - ^(.*/)?.*/RCS/.*$
+  - ^(.*/)?\..*$
+  - docs/

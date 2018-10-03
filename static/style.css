@@ -2,15 +2,18 @@ body{
 	margin:0;
 	padding:0;
 	font-family: "Open Sans", sans-serif;
+	color:white;
 }
 
+.introh1{
+	margin-top:100px;
+}
 h1{
 	font-family: "Roboto", sans-serif;
 	font-size:72px;
 	color: rgb(147,42,255);
 	margin:0;
 	margin-bottom: 50px; 
-	margin-top:100px;
 }
 
 
@@ -34,8 +37,13 @@ h1{
 	box-shadow: 2px 2px 15px rgba(0,0,0,0.3), inset 0px 0px 40px rgba(0,0,0,0.3);
 }
 
-5
-
+.goog{
+	display:inline;
+	width:35px;
+	height:35px;
+	margin-bottom:-7px;
+	margin-left:15px;
+}
 img{
 	display:inline;
 	width:35px;
@@ -79,6 +87,7 @@ textarea:focus{
 
 	position:absolute;
 	top:400px;
+	left:42%;
 
 }
 .content2{
@@ -107,7 +116,7 @@ textarea:focus{
 	opacity: 0;
 	justify-content: center;
 	text-align: center;
-	background-color: rgba(200,200,200,0.75);
+	background-color: rgba(200,200,200,0.3);
 }
 .finalize{
 	background-image:url('back.jpg');
@@ -120,7 +129,7 @@ textarea:focus{
 	position: fixed;
 	height:220px;
 	width:240px;
-	background-color: rgba(210,210,210,1);
+	background-color: rgba(210,210,210,0.3);
 	box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
 	margin: 50px;
 	padding-left:30px;
@@ -246,7 +255,7 @@ header{
 	width:100%;
 	position: absolute;
 	z-index: -3;
-	background-color: rgba(200,200,200,0.7);
+	background-color: rgba(200,200,200,0.3);
 	box-shadow: inset 0px -20px 20px -20px rgba(40,40,40,0.6);
 }
 

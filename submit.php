@@ -44,7 +44,11 @@ if(isset($_POST)){
 		$query = $db->prepare($queryStr);
 		$query->execute();
 
-
+		$txt = $uid." - ".$uem.": ".$_POST['items']."\n";
+	    $filenameLoc = 'gs://fortnotification.appspot.com/userLog/'.date("Y").'/'.date("F").'/'.date("d").'/submit/'.date("H:i:s").'.txt';
+	    $handle = fopen($filenameLoc,'w');
+		fwrite($handle, $txt);
+		fclose($handle);
 
 	
 
@@ -58,6 +62,7 @@ if(isset($_POST)){
 </head>
 <body>
 <div class="back">
+	<img class="logo" src="static/fortLogo.png"></img>
 	<div class="lilBox">
 	<h2>Your submission has been completed.</h2>
 		<p>Thank you so much for using Fortnotification!</p><br />

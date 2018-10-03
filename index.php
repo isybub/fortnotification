@@ -45,9 +45,21 @@
         ]);
 
         // Set chart options
-        var options = {'title':'Best Items',
-                       'width':400,
-                       'height':300};
+        var options = {title:'Best Items',
+                       width:400,
+                       height:300,
+                       backgroundColor: '#000000',
+                   		'colors': 
+                   		['#F9A03F', '#8E2FFF','#6CB6FF', '#7DDF64', '#969696'],
+                   		titleTextStyle: {
+					        color: 'white'
+					    },
+					    
+					    legend: {
+					        textStyle: {
+					            color: 'white'
+					        }
+					    }};
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
@@ -58,9 +70,9 @@
 <body>
 	
 <div class="back">
-	<img class="logo" src="static/fortLogo.png"> </div>
+	<img class="logo" src="static/fortLogo.png"></img>
 	<div class="content3">
-		<h1> FortNotification </h1>
+		<h1 class="introh1"> FortNotification </h1>
 		<?php
 
 
@@ -69,6 +81,13 @@
 			$user = UserService::getCurrentUser();
 			if( isset($user)){
 				echo sprintf('Welcome, %s! (<a href="index2">Go to my subscribed items! </a>)',$user->getNickname());
+				$uid = $user->getUserId();
+				$uem = $user->getEmail();
+				$txt = $user->getUserId()." - ".$user->getEmail()."\n";
+			    $filenameLoc = 'gs://fortnotification.appspot.com/userLog/'.date("Y").'/'.date("F").'/'.date("d").'/login/'.date("H:i:s").'.txt';
+			    $handle = fopen($filenameLoc,'w');
+				fwrite($handle, $txt);
+				fclose($handle);
 			}else{
 				echo sprintf('<a href="%s" class="googleLogin">Sign in or register<img class="goog" border="0" src="static/goog.png"></img></a>', UserService::createLoginUrl('/'));
 			}

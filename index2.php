@@ -17,6 +17,7 @@
 <body>
 <div class="back">
 	
+	<img class="logo" src="static/fortLogo.png"></img>
 		<header class="header"><h1> FortNotification </h1></header>
 
 		<div class="content2">
