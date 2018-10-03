@@ -58,6 +58,7 @@
 <body>
 	
 <div class="back">
+	<img class="logo" src="static/fortLogo.png"> </div>
 	<div class="content3">
 		<h1> FortNotification </h1>
 		<?php
@@ -69,7 +70,7 @@
 			if( isset($user)){
 				echo sprintf('Welcome, %s! (<a href="index2">Go to my subscribed items! </a>)',$user->getNickname());
 			}else{
-				echo sprintf('<a href="%s" class="googleLogin">Sign in or register<img border="0" src="static/goog.png"></img></a>', UserService::createLoginUrl('/'));
+				echo sprintf('<a href="%s" class="googleLogin">Sign in or register<img class="goog" border="0" src="static/goog.png"></img></a>', UserService::createLoginUrl('/'));
 			}
 
 		?>
