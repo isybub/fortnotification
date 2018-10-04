@@ -7,11 +7,6 @@ require_once('Client.php');
 require_once 'php/google-api-php-client/vendor/autoload.php';
 
 
-	use google\appengine\api\users\User;
-	use google\appengine\api\users\Userservice;
-	$user = UserService::getCurrentUser();
-	$uid = $user->getUserId();
-	$uem = $user->getEmail();
 	include "db.php";
 
 	
