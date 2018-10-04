@@ -117,6 +117,7 @@ textarea:focus{
 	justify-content: center;
 	text-align: center;
 	background-color: rgba(200,200,200,0.3);
+	height:auto;
 }
 .finalize{
 	background-image:url('back.jpg');
@@ -257,6 +258,7 @@ header{
 	z-index: -3;
 	background-color: rgba(200,200,200,0.3);
 	box-shadow: inset 0px -20px 20px -20px rgba(40,40,40,0.6);
+	height:auto;
 }
 
 /* width */

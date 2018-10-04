@@ -53,10 +53,12 @@
   </div>
   <div>
   	<?php 
-  	if(count($rec)>0){
+  	if(strlen($rec)>0){
 	  	echo "Based on your current items we would recommend the following items: ";
 	  	echo "<br />";
 	  	echo $rec; 
+  	}else{
+  		echo "You are looking for all of the items everyone wants!"
   	}
   	?>
   </div>
