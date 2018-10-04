@@ -58,7 +58,7 @@
 	  	echo "<br />";
 	  	echo $rec; 
   	}else{
-  		echo "You are looking for all of the items everyone wants!"
+  		echo "You are looking for all of the items everyone wants!";
   	}
   	?>
   </div>
