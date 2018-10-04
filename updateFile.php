@@ -52,9 +52,13 @@
     <?php echo '<textarea rows="4" cols="50" id="items" name="items">'.$str.'</textarea>'?>
   </div>
   <div>
-  	Based on your current items we would reccommend the following items:
-  	<br />
-  	<?php echo $rec; ?>
+  	<?php 
+  	if(count($rec)>0){
+	  	echo "Based on your current items we would recommend the following items: ";
+	  	echo "<br />";
+	  	echo $rec; 
+  	}
+  	?>
   </div>
   <div>
     <button>Submit</button>
